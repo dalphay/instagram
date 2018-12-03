@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "mysql-start": "sudo docker-compose up",
+    "mysql-stop": "sudo docker-compose down ",
+    "mysql-connect": "sudo docker-compose exec db mysql -u alpha -p",
+    "bash": "sudo docker-compose exec db bash"
   },
   "repository": {
     "type": "git",
