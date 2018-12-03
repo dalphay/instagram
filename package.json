@@ -9,7 +9,10 @@
     "mysql-start": "sudo docker-compose up",
     "mysql-stop": "sudo docker-compose down ",
     "mysql-connect": "sudo docker-compose exec db mysql -u alpha -p",
-    "bash": "sudo docker-compose exec db bash"
+    "bash": "sudo docker-compose exec db bash",
+    "migrate": "sequelize db:migrate",
+    "migrate:undo": "sequelize db:migrate:undo"
+
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,8 @@
   },
   "homepage": "https://github.com/dalphay/instagram#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2"
   }
 }
