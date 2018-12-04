@@ -17,10 +17,7 @@ module.exports = {
       image: {
         type: Sequelize.STRING
       },
-      posts_id: {
-        type: Sequelize.INTEGER
-      },
-      user_id: {
+      userId: {
         type: Sequelize.INTEGER,
         references: {
           model: "users",
